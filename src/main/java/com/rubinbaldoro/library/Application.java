@@ -1,4 +1,4 @@
-package com.rubinbaldoro;
+package com.rubinbaldoro.library;
 
 import com.vaadin.flow.theme.lumo.Lumo;
 import org.springframework.boot.SpringApplication;
