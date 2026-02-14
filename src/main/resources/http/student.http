@@ -1,0 +1,20 @@
+### ===========================
+### STUDENT API TESTS
+### ===========================
+
+### 1. Create Student
+POST http://localhost:8080/api/v1/student
+Content-Type: application/json
+
+{
+  "firstName": "Rubin11",
+  "lastName": "Baldoro11",
+  "email": "rubin11@example.com",
+  "studentId": "121S11001"
+}
+
+### 2. Get All Students
+GET http://localhost:8080/api/v1/student
+
+### 3. Delete Student (Be careful! Use a real ID)
+DELETE http://localhost:8080/api/v1/student/1

@@ -1,0 +1,33 @@
+### ===========================
+### BOOK API TESTS
+### ===========================
+
+### 1. Create a new Book
+POST http://localhost:8080/api/v1/book
+Content-Type: application/json
+
+{
+  "title": "Atomic Habits11",
+  "author": "James Clear11",
+  "publishYear": 2020
+}
+
+### 2. Get All Books
+GET http://localhost:8080/api/v1/book
+
+### 3. Get Book by ID (Change '1' to a real ID from the list above)
+GET http://localhost:8080/api/v1/book/1
+
+### 4. Update a Book (Change '1' to a real ID)
+PUT http://localhost:8080/api/v1/book/1
+Content-Type: application/json
+
+{
+  "title": "Atomic Habits (Updated Edition)",
+  "author": "James Clear",
+  "publishYear": 2024
+}
+
+### 5. Delete a Book (Change '1' to a real ID)
+DELETE http://localhost:8080/api/v1/book/2
+
