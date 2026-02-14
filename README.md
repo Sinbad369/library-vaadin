@@ -39,24 +39,23 @@ A full-stack Library Management application built with **Spring Boot** and **Vaa
     `http://localhost:8080/`
 
 ## 📸 Screenshots
-### Home Page 
-![HomePage View](images/homepage.png)
 
-### Students Management 
-![Students View](images/students.png)
+### Home Page
+![HomePage View](images/homepage.PNG)
+
+### Students Management
+![Students View](images/students.PNG)
 
 ### Books Management (Magic Search)
-![Books View](images/books.png)
-![Books View](images/addBookGoogleAPI.png)
-
+![Books View](images/books.PNG)
+![Books View](images/addBookGoogleAPI.PNG)
 
 ### Loan Management
-![Loans View](images/assignBook.png)
-![Loans View](images/studentBookAssign.png)
-
+![Loans View](images/assignBook.PNG)
+![Loans View](images/studentBookAssign.PNG)
 
 ### Secure Registration & Login & Edit Profile
-![Sign Up View](images/registration.png)
-![Login View](images/login.png)
-![Database Bcrypt password](images/bcryptpassword.png)
-![Edit Profile](images/editProfile.png)
+![Sign Up View](images/registration.PNG)
+![Login View](images/login.PNG)
+![Database Bcrypt password](images/bcryptpassword.PNG)
+![Edit Profile](images/editProfile.PNG)
