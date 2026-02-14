@@ -1,34 +1,62 @@
-# My Application README
+# 📚 Rubin's Library Management System
 
-- [ ] TODO Replace or update this README with instructions relevant to your application
+A full-stack Library Management application built with **Spring Boot** and **Vaadin**. This project allows librarians to manage books, students, and loans with a modern, responsive UI.
 
-To start the application in development mode, import it into your IDE and run the `Application` class. 
-You can also start the application from the command line by running: 
+## ✨ Key Features
 
-```bash
-./mvnw
-```
+* **Magic Book Search:** Integrated with **Google Books API**. Enter an ISBN, and the app automatically fetches the Title, Author, and **Cover Image**.
+* **Loan Management:** Check books in and out to students. Tracks "Assigned" and "Returned" dates automatically.
+* **Secure Authentication:** Complete registration flow with **Email Verification** (SMTP) and **BCrypt** password hashing.
+* **Student Management:** Add, edit, and delete student records.
+* **Visual Dashboard:** (Coming soon) A dashboard to view library statistics.
 
-To build the application in production mode, run:
+## 🛠️ Tech Stack
 
-```bash
-./mvnw package
-```
+* **Language:** Java 21 (LTS)
+* **Framework:** Spring Boot 3.x
+* **Frontend:** Vaadin 25 (Flow)
+* **Database:** PostgreSQL
+* **Tools:** Maven, Lombok, Google Books API
 
-To build a Docker image, run:
+## 🚀 How to Run
 
-```bash
-docker build -t my-application:latest .
-```
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/Sinbad369/library-vaadin.git](https://github.com/Sinbad369/library-vaadin.git)
+    ```
 
-If you use commercial components, pass the license key as a build secret:
+2.  **Configure Environment Variables**
+    This project uses environment variables for security. You must set these in your IDE or OS before running:
+    * `DB_PASSWORD`: Your PostgreSQL password.
+    * `MAIL_PASSWORD`: Your Gmail App Password (for email features).
 
-```bash
-docker build --secret id=proKey,src=$HOME/.vaadin/proKey .
-```
+3.  **Database Configuration**
+    Ensure your PostgreSQL service is running. The app expects a database named `library_db` running on port `5432`.
+    *(URL: `jdbc:postgresql://localhost:5432/library_db`)*
 
-## Getting Started
+4.  **Run the App**
+    Run the `LibraryApplication.java` class. The app will be available at:
+    `http://localhost:8080/`
 
-The [Quick Start](https://vaadin.com/docs/v25/getting-started/quick-start) tutorial helps you get started with Vaadin in 
-around 10 minutes. This tutorial walks you through building a simple application, introducing the core concepts along 
-the way.
+## 📸 Screenshots
+### Home Page 
+![HomePage View](images/homepage.png)
+
+### Students Management 
+![Students View](images/students.png)
+
+### Books Management (Magic Search)
+![Books View](images/books.png)
+![Books View](images/addBookGoogleAPI.png)
+
+
+### Loan Management
+![Loans View](images/assignBook.png)
+![Loans View](images/studentBookAssign.png)
+
+
+### Secure Registration & Login & Edit Profile
+![Sign Up View](images/registration.png)
+![Login View](images/login.png)
+![Database Bcrypt password](images/bcryptpassword.png)
+![Edit Profile](images/editProfile.png)
